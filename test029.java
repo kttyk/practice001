@@ -1,18 +1,14 @@
-package sample002;
+package sample003;
 
 public class test029 {
 	public static void main(String[] args) {
-		// 以下にソースコードを入力して下さい。//
-		String animal = "馬";
-		switch(animal){
-		  case "猫":
-		    System.out.println("ニャー");
-		  case "犬":
-		    System.out.println("ワンワン");
-		  case "牛":
-		    System.out.println("モー");
-		  default:
-		    System.out.println("鳴き声はありません。");
-	  }
+		int a = 4;
+		int b = 2;
+		System.out.println("〇〇〇〇〇〇〇");
+		for(a = 0; a < b ; a++){
+		  System.out.println("〇××××××〇");
+		}
+		System.out.println("〇〇〇〇〇〇〇");
+
 	}
 }

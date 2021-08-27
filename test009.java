@@ -1,13 +1,16 @@
-package sample002;
+package sample003;
 
 public class test009 {
 	public static void main(String[] args) {
-		// 以下にソースコードを入力して下さい。//
-    int num = 27;
-    if(num % 2 == 0){
-      System.out.println("numは偶数です。");
-    }else if(num % 2 != 0){
-      System.out.println("numは奇数です。");
-    }
+		int sum = 0;
+		int ave = 0;
+		int[] height ={156,173,184,165,167};
+		
+		for(int i=0; i<height.length; i++){
+		  sum = sum + height[i];
+		  ave = sum / height.length;
+		}
+      System.out.println(ave);
+      
 	}
 }

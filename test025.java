@@ -1,14 +1,13 @@
-package sample002;
+package sample003;
 
 public class test025 {
 	public static void main(String[] args) {
-		// 以下にソースコードを入力して下さい。//
-		int age = 25;
-		if(age >= 20){
-		  System.out.println("成人です。");
-		}else {
-		  System.out.println("未成年です。");
+		int sum = 0;
+		for(int i = 1; i<=50; i++){
+		  if(i % 2 == 0){
+		    sum = sum + i;
+		  }
 		}
-
+      System.out.println(sum);
 	}
 }

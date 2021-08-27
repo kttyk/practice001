@@ -1,17 +1,16 @@
-package sample002;
+package sample003;
 
 public class test020 {
 	public static void main(String[] args) {
-		// 以下にソースコードを入力して下さい。//
-   String weather = "曇り";
-   if(weather == "晴れ"){
-     System.out.println("今日は晴れています。");
-   }else if(weather == "曇り"){
-     System.out.println("今日は曇っています。");
-   }else if(weather == "雨"){
-     System.out.println("今日は雨が降っています。");
-   }else{
-     System.out.println("今日の天気はなんだろう。");
-   }
+		String str = "programing";
+		int count = 0;
+		String[] n = str.split("");
+		
+		for(int i=0; i<n.length; i++){
+		  if("a".equals(n[i])){
+		    count++;
+		  }
+		}
+        System.out.println(count);
 	}
 }

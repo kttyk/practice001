@@ -1,15 +1,13 @@
-package sample002;
+package sample003;
 
 public class test027 {
 	public static void main(String[] args) {
-		// 以下にソースコードを入力して下さい。//
-		int year = 2024;
-		if(year % 4 == 0){
-		  System.out.println("うるう年です。");
-		}else if(year % 100 == 0){
-		  System.out.println("うるう年ではありません。");
-		}else if(year % 400 == 0){
-		  System.out.println("うるう年です。");
+		int count = 0;
+		int i = 0;
+		while(i + count <= 100){
+	    i += count;
+	    count++;
 		}
+    System.out.println(count);
 	}
 }

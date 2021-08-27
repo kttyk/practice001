@@ -1,15 +1,19 @@
-package sample002;
+package sample003;
 
 public class test019 {
 	public static void main(String[] args) {
-		// 以下にソースコードを入力して下さい。//
-		int year = 2022;
-		if(year % 4 == 0){
-		  System.out.println("うるう年です。");
-		}else if(year % 100 != 0){
-		  System.out.println("うるう年ではありません。");
-		}else if(year % 400 == 0){
-		  System.out.println("うるう年です。");
+		  int min = 0;
+			int a = 6;
+			int b = 12;
+			min = Math.min(a,b);
+			
+			for(int i=1; i <= min; ++i){
+			  if(0 == (a % i)){
+			    if(0 == (b % i)){
+			      System.out.print(i);
+			    }
+			  }
+			}
+	     
 		}
 	}
-}

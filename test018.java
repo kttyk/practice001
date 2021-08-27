@@ -1,13 +1,12 @@
-package sample002;
+package sample003;
 
 public class test018 {
 	public static void main(String[] args) {
-		// 以下にソースコードを入力して下さい。//
-		String gender = "女性";
-		if(gender == "男性"){
-		  System.out.println("男子トイレは1F、3F、５Fにございます。");
-		}else if(gender == "女性"){
-		  System.out.println("女子トイレは1F、2F、４Fにございます。");
+		int n =0;
+		while(n < 3){
+		  n++;
+		  System.out.println(n + "回目の実行");
 		}
+
 	}
 }

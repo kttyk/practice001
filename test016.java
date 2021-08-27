@@ -1,11 +1,16 @@
-package sample002;
+ package sample003;
 
 public class test016 {
 	public static void main(String[] args) {
-		// 以下にソースコードを入力して下さい。//
-    boolean completeFrag = false;
-    if(completeFrag != true){
-      System.out.println("まだ処理が終わっていません。");
-    }
+		String str = "12345234112345";
+		int count = 0;
+		
+		String[] num = str.split("");
+		for(int i=0; i<num.length; i++){
+		  if("2".equals(num[i])){
+		    count++;
+		  }
+		}
+      System.out.println(count);
 	}
 }

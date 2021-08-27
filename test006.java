@@ -1,11 +1,12 @@
-package sample002;
+package sample003;
 
 public class test006 {
 	public static void main(String[] args) {
-		// 以下にソースコードを入力して下さい。//
-    boolean hungryFrag = true;
-    if(hungryFrag){
-      System.out.println("食事をしましょう。");
-    }
+		int i = -2;
+		while(i <= 25){
+	    System.out.print(i + ",");
+	    i += 3;
+		}
+     	  
 	}
 }

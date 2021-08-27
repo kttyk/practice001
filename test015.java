@@ -1,25 +1,20 @@
-package sample002;
+package sample003;
 
 public class test015 {
 	public static void main(String[] args) {
-		// 以下にソースコードを入力して下さい。//
-    int num1 =9;
-    int num2 =12;
-    if(num1 % 3 == 0){
-      num1 /= 3;
-    }else {
-      num1 /= 2;
-    }
-    if(num2 % 5 == 0){
-      num2 /= 5;
-    }else {
-      num2 /= 2;
-    }
-    if((num1 + num2) % 3 == 0){
-      System.out.println((num1 + num2) * 3);
-    }else {
-      System.out.println((num1 + num2) * 5);
-    }
+		
+		int[] num={12,24,18,35,21};
+		for(int i=0; i < num.length - 1; i++){
+		  for(int j=i + 1; j < num.length; j++){
+		   if(num[i] > num[j]){
+		     int a = num[i];
+		     num[i] = num[j];
+		     num[j] = a;
+		    }
+		  }
+		}
+		for(int i=0; i<num.length; i++){
+     System.out.print(num[i] + ",");
+	  }
 	}
 }
-

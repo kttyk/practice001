@@ -1,13 +1,14 @@
-package sample002;
+package sample003;
 
 public class test004 {
 	public static void main(String[] args) {
-		// 以下にソースコードを入力して下さい。//
-    int num = 0;
-    if(num == 0){
-      System.out.println("0です。");
-    }else if(num != 0){
-      System.out.println("0ではありません。");
-    }
+	 int count = 0;
+	 int sum = 0;
+	 while(sum + count<=500) {
+		 sum += count;
+		 count++;
+	 }
+	 System.out.println(count - 1);
+	 
 	}
 }

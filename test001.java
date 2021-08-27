@@ -1,13 +1,12 @@
-package sample002;
+package sample003;
 
 public class test001 {
 	public static void main(String[] args) {
-		// 以下にソースコードを入力して下さい。//
-    int num = -5;
-    if(num>=0){
-      System.out.println("正の数です。");
-    }else{
-      System.out.println("負の数です。");
-    }
+		double money = 10000;
+		double tax = 0.05;
+		for(int i=1; i<=10; i++){
+		  money *= tax + 1;
+		}
+        System.out.println("10年後は" + money + "です。");
 	}
 }
