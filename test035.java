@@ -1,20 +1,13 @@
-package sample002;
+package sample003;
 
 public class test035 {
 	public static void main(String[] args) {
-		// 以下にソースコードを入力して下さい。//
-		int age = 17;
-		if(age == 999){
-		  System.out.println("CERO「A」");
-		}else if(age >= 18){
-		  System.out.println("CERO「Z」");
-		}else if(age >= 17){
-		  System.out.println("CERO「D」");
-		}else if(age >= 15){
-		  System.out.println("CERO「C」");
-		}else if(age >= 12){
-		  System.out.println("CERO「B」");
-		}
-
+	int[]point ={65,52,84,39,95,76};
+	String[] people ={"山田","田中","鈴木","山下","松井","武田"};
+	int min = point[0];
+	 for(int i=0; i<point.length; i++){
+	   if(min > point[i])min = point[i];
+	 } 
+	 System.out.println(min);
 	}
 }

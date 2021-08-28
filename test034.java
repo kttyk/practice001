@@ -1,13 +1,16 @@
-package sample002;
+package sample003;
 
 public class test034 {
 	public static void main(String[] args) {
-		// 以下にソースコードを入力して下さい。//
-		int num = 54;
-		if(num % 2 == 0){
-		  System.out.println("numは偶数です。");
-		}else if(num % 2 != 0){
-		  System.out.println("numは奇数です。");
+		String str = "11184527181468";
+		int count = 0;
+		String[] num = str.split("");
+		
+		for(int i=0; i<num.length; i++){
+		  if("5".equals(num[i])){
+		    count++;
+		  }
 		}
+        System.out.println(count);
 	}
 }

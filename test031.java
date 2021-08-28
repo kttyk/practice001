@@ -1,18 +1,25 @@
-package sample002;
+package sample003;
 
 public class test031 {
 	public static void main(String[] args) {
-		// 以下にソースコードを入力して下さい。//
-		int score = 70;
-		if(score >= 80){
-		  System.out.println("素晴らしい");
-		}else if((score >= 60)&&(score <= 79)){
-		  System.out.println("頑張りましたね！");
-		}else if((score >= 40)&&(score <= 59)){
-		  System.out.println("もう少し頑張りまししよう！");
-		}else if(score <= 39){
-		  System.out.println("補修に参加しましょう。");
+		int[] a ={1,2,3};
+		int[] b ={2,3,4};
+		int[] c = new int[a.length];
+		int i = 0, j=0, k=0;
+		while(i<a.length && j<b.length){
+		  if(a[i] < b[j]){
+		    i++;
+		  }else if(a[i] > b[j]) {
+			j++;
+		  }else {
+			c[k] = a[i];
+			i++;
+			j++;
+			k++;
+		  }
 		}
-
+        for(int l=0; l<c.length;l++) {
+        	System.out.print(c[l]);
+        }
 	}
 }
