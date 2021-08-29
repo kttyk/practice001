@@ -1,14 +1,14 @@
-package sample002;
+package sample003;
 
 public class test037 {
 	public static void main(String[] args) {
-		// 以下にソースコードを入力して下さい。//
-		int age = 14;
-		boolean parentFrag = true;
-		if((age >= 15)||(parentFrag)){
-		  System.out.println("参加可能です。");
-		}else {
-		  System.out.println("残念ながら今回はご参加いただけません。");
+		int sum = 0;
+		double average = 0;
+		for(int i=0; i<=20; i++){
+		  sum += i;
+		  average = (double)sum / i;
+		 
 		}
+    System.out.println("総和は" + sum + "、平均は" + average + "です。");
 	}
 }
