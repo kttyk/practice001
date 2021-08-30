@@ -1,14 +1,16 @@
-package sample002;
+package sample003;
 
 public class test043 {
 	public static void main(String[] args) {
-		// 以下にソースコードを入力して下さい。//
-		int num = 0;
-		if(num == 0){
-		  System.out.println("0です。");
-		}else if(num != 0){
-		  System.out.println("0ではありません。");
-		}
+		int num = 1;
+		int sum = 0;
+		do{
+		  sum = sum + num;
+		  num++;
+		  if(sum >= 3){
+		     System.out.print(sum + ",");
+		  }
+		}while(num <= 10);
 
 	}
 }

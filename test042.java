@@ -1,17 +1,13 @@
-package sample002;
+package sample003;
 
 public class test042 {
 	public static void main(String[] args) {
-		// 以下にソースコードを入力して下さい。//
-		int age = 28;
-		String gender = "女性";
-		if((age >= 20)&&(gender == "女性")){
-		  System.out.println("成人女性です。");
-		}else if((age >= 20)&&(gender == "男性")){
-		  System.out.println("成人男性です。");
-		}else if(age < 20){
-		  System.out.println("未成年です。");
+		int sum = 0;
+		for(int i=1; i<=100; i++){
+		  if(i % 5 == 0){
+		    sum += i;
+		  }
 		}
-
+    System.out.println(sum);
 	}
 }

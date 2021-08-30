@@ -1,22 +1,13 @@
-package sample002;
+package sample003;
 
 public class test041 {
 	public static void main(String[] args) {
-		// 以下にソースコードを入力して下さい。//
-		double bmi = 20;
-		if(bmi < 18.5){
-		  System.out.println("低体重");
-		}else if(bmi < 25){
-		  System.out.println("普通体重");
-		}else if(bmi < 30){
-		  System.out.println("肥満(1度)");
-		}else if(bmi < 35){
-		  System.out.println("肥満(2度)");
-		}else if(bmi < 40){
-		  System.out.println("肥満(3度)");
-		}else if(bmi >= 40){
-		  System.out.println("肥満(4度)");
+		for(int i=1; i<=9; i++){
+		  for(int j=1; j<=9; j++){
+		    System.out.print(i*j +",");
+		  }
+		    System.out.println();
 		}
-
+       
 	}
 }
