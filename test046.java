@@ -1,16 +1,13 @@
-package sample002;
+package sample003;
 
 public class test046 {
 	public static void main(String[] args) {
-		// 以下にソースコードを入力して下さい。//
-		String food = "アイスクリーム";
-		switch(food){
-		  case "おにぎり": case "ラーメン": case "オムライス":
-		    System.out.println("ごはんです。");
-		  case "お茶": case "水": case "ミックスジュース":
-		    System.out.println("飲み物です。");
-		  case "ケーキ": case "アイスクリーム": case "フルーツ":
-		    System.out.println("デザートです。");
+		for(int i=0; i<4; i++){
+		  for(int j=0; j<5; j++){
+		    System.out.print("〇");
+		    System.out.print("×");
+		  }
+		    System.out.println();
 		}
 
 	}
