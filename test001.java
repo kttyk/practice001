@@ -1,12 +1,18 @@
-package sample003;
+package sample001;
 
-public class test001 {
+import java.util.Scanner;
+
+public class test001{
 	public static void main(String[] args) {
-		double money = 10000;
-		double tax = 0.05;
-		for(int i=1; i<=10; i++){
-		  money *= tax + 1;
-		}
-        System.out.println("10年後は" + money + "です。");
+		Scanner s = new Scanner(System.in);
+		System.out.println("あなたのお名前は？");
+		String name = s.next();
+		System.out.println("身長は？");
+		double a = s.nextDouble();
+		System.out.println("体重は？");
+		double b = s.nextDouble();
+		double bmi = b / (a/100 * a/100);
+		System.out.println("BMIは" + bmi + "です。" );
+		
 	}
 }
