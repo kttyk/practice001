@@ -1,15 +1,12 @@
-package sample003;
+package sample001;
 
 public class test008 {
 	public static void main(String[] args) {
-		int i = 0;
-		int sum = 1;
-		
-		while(sum * 3 <= 100){
-		 sum *= 3;
-		 i++;
-		 
+		int sum =0;
+		int[] score={55,45,80};
+		for(int i=0; i<score.length; i++){
+		  sum = sum + score[i];
 		}
-      System.out.println(sum);
+   System.out.println(sum);
 	}
 }

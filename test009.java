@@ -1,16 +1,14 @@
-package sample003;
+package sample001;
 
 public class test009 {
 	public static void main(String[] args) {
-		int sum = 0;
-		int ave = 0;
-		int[] height ={156,173,184,165,167};
-		
-		for(int i=0; i<height.length; i++){
-		  sum = sum + height[i];
-		  ave = sum / height.length;
+		for(int i=1; i<=9; i++){
+		  for(int j=1; j<=9; j++){
+		    System.out.print(i*j + ",");
+		    
+		  } 
+		System.out.println();
 		}
-      System.out.println(ave);
-      
+     
 	}
 }
