@@ -1,16 +1,13 @@
-package sample001;
+package sample002;
 
 public class test004 {
 	public static void main(String[] args) {
-		int i =0;
-		int num =0;
-	  do{
-	    num = num + i;
-	    i++;
-	  }while(num<=100);
-	    
-	  System.out.println(i - 1);
-  
+		// 以下にソースコードを入力して下さい。//
+    int num = 0;
+    if(num == 0){
+      System.out.println("0です。");
+    }else if(num != 0){
+      System.out.println("0ではありません。");
+    }
 	}
 }
-
